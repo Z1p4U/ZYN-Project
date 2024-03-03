@@ -1,0 +1,144 @@
+[2024-03-03 14:48:40] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect(Array)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 /Users/thantzinhtet/Downloads/student_old/app/Exceptions/Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2024-03-03 14:48:40] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', '/Users/thantzin...', 1349)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(582): include('/Users/thantzin...')
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}('/Users/thantzin...')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(130): collect(Array)
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 /Users/thantzinhtet/Downloads/student_old/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', '/Users/thantzin...', 1349)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(582): include('/Users/thantzin...')
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}('/Users/thantzin...')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(130): collect(Array)
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 /Users/thantzinhtet/Downloads/student_old/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-03 14:49:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect(Array)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 /Users/thantzinhtet/Downloads/student_old/app/Exceptions/Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2024-03-03 14:49:08] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', '/Users/thantzin...', 1349)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(582): include('/Users/thantzin...')
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}('/Users/thantzin...')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(130): collect(Array)
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 /Users/thantzinhtet/Downloads/student_old/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', '/Users/thantzin...', 1349)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(582): include('/Users/thantzin...')
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}('/Users/thantzin...')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(130): collect(Array)
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 /Users/thantzinhtet/Downloads/student_old/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-03 14:49:23] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect(Array)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(118): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 /Users/thantzinhtet/Downloads/student_old/app/Exceptions/Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2024-03-03 14:49:23] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', '/Users/thantzin...', 1349)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(582): include('/Users/thantzin...')
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}('/Users/thantzin...')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(130): collect(Array)
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 /Users/thantzinhtet/Downloads/student_old/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', '/Users/thantzin...', 1349)
+#1 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(582): include('/Users/thantzin...')
+#2 /Users/thantzinhtet/Downloads/student_old/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}('/Users/thantzin...')
+#3 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(130): collect(Array)
+#5 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 /Users/thantzinhtet/Downloads/student_old/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at /Users/thantzinhtet/Downloads/student_old/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
